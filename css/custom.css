@@ -1,0 +1,44 @@
+.non-checked-btn {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #000000;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 13px 30px 12px;
+    background: #fff;
+    border: 1px solid #000000;
+}
+
+.checked-btn {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 13px 30px 12px;
+    background: #BF2F38;
+    border: none;
+}
+
+.active-category {
+    color: #BF2F38 !important;
+    font-weight: bold;
+}
+
+.hero__categories__all {
+    background: #BF2F38 !important;
+}
+
+.header__menu ul li.active a {
+    color: #BF2F38 !important;
+}
+
+.header__cart ul li a span {
+    background: #BF2F38 !important;
+}
+
+.section-title h2:after {
+    background: #BF2F38 !important;
+}
