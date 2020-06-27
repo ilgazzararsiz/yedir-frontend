@@ -8,6 +8,7 @@
     padding: 13px 30px 12px;
     background: #fff;
     border: 1px solid #000000;
+    margin-bottom: 10px;
 }
 
 .checked-btn {
@@ -20,6 +21,7 @@
     padding: 13px 30px 12px;
     background: #BF2F38;
     border: none;
+    margin-bottom: 10px;
 }
 
 .active-category {

@@ -11,7 +11,9 @@ $(document).ready(function () {
             let categoryHtmlContainer = $('#category-list');
 
             categories.forEach(function (category) {
-                categoryHtmlContainer.append('<li><a href="#" id="' + category.id + '">' + category.name + '</a></li>');
+                categoryHtmlContainer.append('<li>' +
+                    '<img src="' + category.iconUrl +'" width="25" style="float: left; margin-right: 10px; margin-top: 5px;">' +
+                    '<a href="#" id="' + category.id + '">' + category.name + '</a></li>');
 
                 $('#' + category.id).click(function () {
                     loadCategoryIngredients(category.id);
