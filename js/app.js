@@ -139,7 +139,7 @@ $(document).ready(function () {
                 }
             });
             differenceString = differenceString +
-                '<a href="https://www.banabi.com/" target="_blank" style="margin-left: 3px"><img height="30" src="https://lh3.googleusercontent.com/proxy/QGtKSYqRuXnGVTLH09HPAp9wL1XKsSziKjOLap81g9eqw8NLhDIFAmjF-6vxFNjvA7-RFxJTs8Bt94Zq3GVpxPOqWunlpHIDkimNPt5oUCHaFbub-Q-hfYePuPA" /></a>' +
+                '<a href="https://www.banabi.com/" target="_blank" style="margin-left: 3px"><img height="30" src="https://turk-internet.com/wp-content/uploads/2019/08/Yemeksepeti_Banabi_Logo_ticom.png" /></a>' +
                 '<a href="https://getir.com" target="_blank" style="margin-left: 3px"><img height="30" src="https://www.getir.com/img/bimutluluk.png" /></a>'
         }
 
