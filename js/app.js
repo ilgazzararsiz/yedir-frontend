@@ -12,7 +12,7 @@ $(document).ready(function () {
 
             categories.forEach(function (category) {
                 categoryHtmlContainer.append('<li>' +
-                    '<img src="' + category.iconUrl +'" width="25" style="float: left; margin-right: 10px; margin-top: 5px;">' +
+                    '<img src="' + category.iconUrl + '" width="25" style="float: left; margin-right: 10px; margin-top: 5px;">' +
                     '<a href="#" id="' + category.id + '">' + category.name + '</a></li>');
 
                 $('#' + category.id).click(function () {
@@ -156,7 +156,20 @@ $(document).ready(function () {
             chosenIngredientsHtmlContainer.html('');
 
             chosenIngredients.forEach(ingredient => {
-                chosenIngredientsHtmlContainer.append('<a href="#" class="checked-btn" id="' + ingredient.id + '"> ' + ingredient.name + '</a>');
+                chosenIngredientsHtmlContainer.append('<a href="#" class="checked-btn" id="' + ingredient.id + '_chosen"> ' + ingredient.name + '</a>');
+
+                $('#' + ingredient.id + '_chosen').click(function () {
+                    $('#' + ingredient.id + '_chosen').removeClass("checked-btn");
+                    $('#' + ingredient.id).removeClass("checked-btn");
+                    chosenIngredients = chosenIngredients.filter(singleIngredient => {
+                        return singleIngredient !== ingredient
+                    });
+                    loadRecipes();
+
+
+                    renderChosenIngredients();
+
+                });
             });
         } else {
             chosenIngredientsSection.hide('fast');

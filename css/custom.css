@@ -44,3 +44,6 @@
 .section-title h2:after {
     background: #BF2F38 !important;
 }
+.header__menu ul li:hover>a {
+    color: #BF2F38 !important;
+}
